@@ -11,7 +11,7 @@ import CombineExt
 import Foundation
 
 final class CatsViewModel {
-    private let repository: CatsRepository
+    private let repository: CatsRepositoryProtocol
 
     private var cats: AnyPublisher<[Cat], Never> {
         repository.fetchCats()
@@ -33,7 +33,7 @@ final class CatsViewModel {
             .eraseToAnyPublisher()
     }
 
-    init(repository: CatsRepository = CatsRepository()) {
+    init(repository: CatsRepositoryProtocol = CatsRepository()) {
         self.repository = repository
     }
 }

@@ -9,7 +9,11 @@
 import Combine
 import Foundation
 
-final class CatsRepository {
+protocol CatsRepositoryProtocol {
+    func fetchCats() -> AnyPublisher<Cats, Never>
+}
+
+final class CatsRepository: CatsRepositoryProtocol {
     func fetchCats() -> AnyPublisher<Cats, Never> {
         Just(API.url.value)
             .compactMap { URL(string: $0) }

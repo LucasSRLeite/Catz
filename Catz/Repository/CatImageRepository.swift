@@ -9,7 +9,11 @@
 import Combine
 import UIKit
 
-final class CatImageRepository {
+protocol CatImageRepositoryProtocol {
+    func fetchImage(for catImage: CatImage) -> AnyPublisher<UIImage?, Never>
+}
+
+final class CatImageRepository: CatImageRepositoryProtocol {
     func fetchImage(for catImage: CatImage) -> AnyPublisher<UIImage?, Never> {
         Just(catImage.link)
             .compactMap { URL(string: $0) }
