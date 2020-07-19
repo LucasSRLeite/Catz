@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>1ceddedc03a5d71</string>
+	<key>secret</key>
+	<string>63775118a9f912fd91ed99574becf3b375d9 eeca</string>
+	<key>url</key>
+	<string>https://api.imgur.com/3/gallery/search?q=cats</string>
+</dict>
+</plist>
