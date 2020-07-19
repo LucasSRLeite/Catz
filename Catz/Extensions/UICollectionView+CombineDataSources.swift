@@ -19,9 +19,3 @@ extension UICollectionView {
         register(cellClass, forCellWithReuseIdentifier: String(describing: cellClass))
     }
 }
-
-extension Publisher where Output: Collection {
-    func compactMapMany<Result>(_ transform: @escaping (Output.Element) -> Result?) -> Publishers.Map<Self, [Result]> {
-        map { $0.compactMap(transform) }
-    }
-}

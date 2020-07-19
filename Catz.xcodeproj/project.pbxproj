@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6423A64124C4D72600674DAD /* Publisher+CompactMapMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6423A64024C4D72600674DAD /* Publisher+CompactMapMany.swift */; };
 		646C02C424C257B100BD93B7 /* CombineDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 646C02C324C257B100BD93B7 /* CombineDataSources */; };
 		646C02C624C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */; };
 		646C02C824C2592300BD93B7 /* CatImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C724C2592300BD93B7 /* CatImageRepository.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6423A64024C4D72600674DAD /* Publisher+CompactMapMany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+CompactMapMany.swift"; sourceTree = "<group>"; };
 		646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CombineDataSources.swift"; sourceTree = "<group>"; };
 		646C02C724C2592300BD93B7 /* CatImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRepository.swift; sourceTree = "<group>"; };
 		646C02C924C2595000BD93B7 /* CatImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageViewModel.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */,
+				6423A64024C4D72600674DAD /* Publisher+CompactMapMany.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DFDFB024C2458E00E6F371 /* CatsViewController.swift in Sources */,
+				6423A64124C4D72600674DAD /* Publisher+CompactMapMany.swift in Sources */,
 				646C02C624C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift in Sources */,
 				64DFDFD624C246B800E6F371 /* Cat.swift in Sources */,
 				64FD94D724C33CE80060E051 /* ImageCacheHandler.swift in Sources */,
