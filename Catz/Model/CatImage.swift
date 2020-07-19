@@ -11,4 +11,9 @@ import Foundation
 struct CatImage: Decodable, Hashable {
     let id: String
     let link: String
+    let type: String
+
+    var isImage: Bool {
+        type.contains("image")
+    }
 }

@@ -18,9 +18,7 @@ struct CatImageViewModel {
     }
 
     init?(catImage: CatImage, repository: CatImageRepository = CatImageRepository()) {
-        guard catImage.link.contains(".jpg") || catImage.link.contains(".png") else {
-            return nil
-        }
+        guard catImage.isImage else { return nil }
         self.catImage = catImage
         self.repository = repository
     }
