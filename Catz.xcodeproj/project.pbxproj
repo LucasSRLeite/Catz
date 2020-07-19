@@ -3,17 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646C02C424C257B100BD93B7 /* CombineDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 646C02C324C257B100BD93B7 /* CombineDataSources */; };
+		646C02C624C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */; };
+		646C02C824C2592300BD93B7 /* CatImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C724C2592300BD93B7 /* CatImageRepository.swift */; };
+		646C02CA24C2595000BD93B7 /* CatImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C924C2595000BD93B7 /* CatImageViewModel.swift */; };
+		646C02CD24C259D200BD93B7 /* CombineExt in Frameworks */ = {isa = PBXBuildFile; productRef = 646C02CC24C259D200BD93B7 /* CombineExt */; };
+		646C02D024C272A000BD93B7 /* Cats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02CF24C272A000BD93B7 /* Cats.swift */; };
+		646C02D224C272AE00BD93B7 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02D124C272AE00BD93B7 /* CatImage.swift */; };
 		64DFDFAC24C2458E00E6F371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFAB24C2458E00E6F371 /* AppDelegate.swift */; };
 		64DFDFAE24C2458E00E6F371 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFAD24C2458E00E6F371 /* SceneDelegate.swift */; };
-		64DFDFB024C2458E00E6F371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFAF24C2458E00E6F371 /* ViewController.swift */; };
+		64DFDFB024C2458E00E6F371 /* CatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFAF24C2458E00E6F371 /* CatsViewController.swift */; };
 		64DFDFB324C2458E00E6F371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DFDFB124C2458E00E6F371 /* Main.storyboard */; };
 		64DFDFB524C2459300E6F371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64DFDFB424C2459300E6F371 /* Assets.xcassets */; };
 		64DFDFB824C2459300E6F371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64DFDFB624C2459300E6F371 /* LaunchScreen.storyboard */; };
 		64DFDFC324C2459300E6F371 /* CatzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFC224C2459300E6F371 /* CatzTests.swift */; };
+		64DFDFCE24C245E700E6F371 /* CatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFCD24C245E700E6F371 /* CatsViewModel.swift */; };
+		64DFDFD024C245F900E6F371 /* CatsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFCF24C245F900E6F371 /* CatsRepository.swift */; };
+		64DFDFD224C2461D00E6F371 /* API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64DFDFD124C2461D00E6F371 /* API.plist */; };
+		64DFDFD424C2464300E6F371 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFD324C2464300E6F371 /* API.swift */; };
+		64DFDFD624C246B800E6F371 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFD524C246B800E6F371 /* Cat.swift */; };
+		64DFDFDA24C24ABA00E6F371 /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DFDFD924C24ABA00E6F371 /* CatCollectionViewCell.swift */; };
+		64FD94D724C33CE80060E051 /* ImageCacheHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FD94D624C33CE80060E051 /* ImageCacheHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CombineDataSources.swift"; sourceTree = "<group>"; };
+		646C02C724C2592300BD93B7 /* CatImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRepository.swift; sourceTree = "<group>"; };
+		646C02C924C2595000BD93B7 /* CatImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageViewModel.swift; sourceTree = "<group>"; };
+		646C02CF24C272A000BD93B7 /* Cats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cats.swift; sourceTree = "<group>"; };
+		646C02D124C272AE00BD93B7 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
 		64DFDFA824C2458E00E6F371 /* Catz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DFDFAB24C2458E00E6F371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64DFDFAD24C2458E00E6F371 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64DFDFAF24C2458E00E6F371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64DFDFAF24C2458E00E6F371 /* CatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewController.swift; sourceTree = "<group>"; };
 		64DFDFB224C2458E00E6F371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64DFDFB424C2459300E6F371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64DFDFB724C2459300E6F371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +57,13 @@
 		64DFDFBE24C2459300E6F371 /* CatzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DFDFC224C2459300E6F371 /* CatzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatzTests.swift; sourceTree = "<group>"; };
 		64DFDFC424C2459300E6F371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DFDFCD24C245E700E6F371 /* CatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsViewModel.swift; sourceTree = "<group>"; };
+		64DFDFCF24C245F900E6F371 /* CatsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsRepository.swift; sourceTree = "<group>"; };
+		64DFDFD124C2461D00E6F371 /* API.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = API.plist; sourceTree = "<group>"; };
+		64DFDFD324C2464300E6F371 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		64DFDFD524C246B800E6F371 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		64DFDFD924C24ABA00E6F371 /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
+		64FD94D624C33CE80060E051 /* ImageCacheHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646C02CD24C259D200BD93B7 /* CombineExt in Frameworks */,
+				646C02C424C257B100BD93B7 /* CombineDataSources in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +86,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646C02CE24C2729600BD93B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64DFDFD524C246B800E6F371 /* Cat.swift */,
+				646C02CF24C272A000BD93B7 /* Cats.swift */,
+				646C02D124C272AE00BD93B7 /* CatImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		646C02D324C273AE00BD93B7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				64FD94D624C33CE80060E051 /* ImageCacheHandler.swift */,
+				646C02C724C2592300BD93B7 /* CatImageRepository.swift */,
+				64DFDFCF24C245F900E6F371 /* CatsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		646C02D424C273BB00BD93B7 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64DFDFD924C24ABA00E6F371 /* CatCollectionViewCell.swift */,
+				64DFDFAF24C2458E00E6F371 /* CatsViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		646C02D524C273C800BD93B7 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				64DFDFCD24C245E700E6F371 /* CatsViewModel.swift */,
+				646C02C924C2595000BD93B7 /* CatImageViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		64DFDF9F24C2458D00E6F371 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +145,18 @@
 		64DFDFAA24C2458E00E6F371 /* Catz */ = {
 			isa = PBXGroup;
 			children = (
+				64DFDFD124C2461D00E6F371 /* API.plist */,
+				64DFDFB924C2459300E6F371 /* Info.plist */,
+				64DFDFD324C2464300E6F371 /* API.swift */,
 				64DFDFAB24C2458E00E6F371 /* AppDelegate.swift */,
 				64DFDFAD24C2458E00E6F371 /* SceneDelegate.swift */,
-				64DFDFAF24C2458E00E6F371 /* ViewController.swift */,
-				64DFDFB124C2458E00E6F371 /* Main.storyboard */,
 				64DFDFB424C2459300E6F371 /* Assets.xcassets */,
-				64DFDFB624C2459300E6F371 /* LaunchScreen.storyboard */,
-				64DFDFB924C2459300E6F371 /* Info.plist */,
+				64FD94D924C3DB640060E051 /* Extensions */,
+				64FD94DA24C3DB780060E051 /* Storyboard */,
+				646C02CE24C2729600BD93B7 /* Model */,
+				646C02D324C273AE00BD93B7 /* Repository */,
+				646C02D424C273BB00BD93B7 /* View Controller */,
+				646C02D524C273C800BD93B7 /* View Model */,
 			);
 			path = Catz;
 			sourceTree = "<group>";
@@ -97,6 +168,23 @@
 				64DFDFC424C2459300E6F371 /* Info.plist */,
 			);
 			path = CatzTests;
+			sourceTree = "<group>";
+		};
+		64FD94D924C3DB640060E051 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64FD94DA24C3DB780060E051 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				64DFDFB624C2459300E6F371 /* LaunchScreen.storyboard */,
+				64DFDFB124C2458E00E6F371 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +203,10 @@
 			dependencies = (
 			);
 			name = Catz;
+			packageProductDependencies = (
+				646C02C324C257B100BD93B7 /* CombineDataSources */,
+				646C02CC24C259D200BD93B7 /* CombineExt */,
+			);
 			productName = Catz;
 			productReference = 64DFDFA824C2458E00E6F371 /* Catz.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +257,10 @@
 				Base,
 			);
 			mainGroup = 64DFDF9F24C2458D00E6F371;
+			packageReferences = (
+				646C02C224C257B100BD93B7 /* XCRemoteSwiftPackageReference "CombineDataSources" */,
+				646C02CB24C259D200BD93B7 /* XCRemoteSwiftPackageReference "CombineExt" */,
+			);
 			productRefGroup = 64DFDFA924C2458E00E6F371 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DFDFB824C2459300E6F371 /* LaunchScreen.storyboard in Resources */,
+				64DFDFD224C2461D00E6F371 /* API.plist in Resources */,
 				64DFDFB524C2459300E6F371 /* Assets.xcassets in Resources */,
 				64DFDFB324C2458E00E6F371 /* Main.storyboard in Resources */,
 			);
@@ -200,8 +297,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64DFDFB024C2458E00E6F371 /* ViewController.swift in Sources */,
+				64DFDFB024C2458E00E6F371 /* CatsViewController.swift in Sources */,
+				646C02C624C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift in Sources */,
+				64DFDFD624C246B800E6F371 /* Cat.swift in Sources */,
+				64FD94D724C33CE80060E051 /* ImageCacheHandler.swift in Sources */,
+				64DFDFCE24C245E700E6F371 /* CatsViewModel.swift in Sources */,
+				646C02D024C272A000BD93B7 /* Cats.swift in Sources */,
 				64DFDFAC24C2458E00E6F371 /* AppDelegate.swift in Sources */,
+				646C02D224C272AE00BD93B7 /* CatImage.swift in Sources */,
+				64DFDFD024C245F900E6F371 /* CatsRepository.swift in Sources */,
+				646C02CA24C2595000BD93B7 /* CatImageViewModel.swift in Sources */,
+				64DFDFDA24C24ABA00E6F371 /* CatCollectionViewCell.swift in Sources */,
+				64DFDFD424C2464300E6F371 /* API.swift in Sources */,
+				646C02C824C2592300BD93B7 /* CatImageRepository.swift in Sources */,
 				64DFDFAE24C2458E00E6F371 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +577,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		646C02C224C257B100BD93B7 /* XCRemoteSwiftPackageReference "CombineDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+		646C02CB24C259D200BD93B7 /* XCRemoteSwiftPackageReference "CombineExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineExt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		646C02C324C257B100BD93B7 /* CombineDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 646C02C224C257B100BD93B7 /* XCRemoteSwiftPackageReference "CombineDataSources" */;
+			productName = CombineDataSources;
+		};
+		646C02CC24C259D200BD93B7 /* CombineExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 646C02CB24C259D200BD93B7 /* XCRemoteSwiftPackageReference "CombineExt" */;
+			productName = CombineExt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64DFDFA024C2458D00E6F371 /* Project object */;
 }
