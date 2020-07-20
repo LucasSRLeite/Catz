@@ -11,13 +11,11 @@ import UIKit
 
 final class CatCollectionViewCell: UICollectionViewCell {
     @IBOutlet private var catImageView: UIImageView!
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView!
 
     var viewModel: CatImageViewModel! {
         didSet {
-            viewModel.image
-                .receive(on: DispatchQueue.main)
-                .assign(to: \.image, on: catImageView)
-                .store(in: &cancellables)
+            setupBindings()
         }
     }
 
@@ -29,5 +27,18 @@ final class CatCollectionViewCell: UICollectionViewCell {
         catImageView.image = nil
 
         cancellables.forEach { $0.cancel() }
+    }
+
+    private func setupBindings() {
+        viewModel.image
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.image, on: catImageView)
+            .store(in: &cancellables)
+
+        viewModel.isRequesting
+            .map(!)
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.isHidden, on: activityIndicator)
+            .store(in: &cancellables)
     }
 }

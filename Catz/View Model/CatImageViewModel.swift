@@ -7,14 +7,25 @@
 //
 
 import Combine
+import CombineExt
 import UIKit
 
-struct CatImageViewModel {
+final class CatImageViewModel {
     private let catImage: CatImage
     private let repository: CatImageRepository
 
+    private var isRequestingSubject = CurrentValueSubject<Bool, Never>(true)
+
     var image: AnyPublisher<UIImage?, Never> {
         repository.fetchImage(for: catImage)
+            .handleEvents(receiveOutput: { [weak self] image in
+                self?.isRequestingSubject.send(false)
+            })
+            .eraseToAnyPublisher()
+    }
+
+    var isRequesting: AnyPublisher<Bool, Never> {
+        isRequestingSubject.eraseToAnyPublisher()
     }
 
     init?(catImage: CatImage, repository: CatImageRepository = CatImageRepository()) {

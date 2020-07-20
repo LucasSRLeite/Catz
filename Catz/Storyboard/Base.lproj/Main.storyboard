@@ -40,15 +40,21 @@
                                                         <constraint firstAttribute="width" constant="100" id="uhH-yo-pv9"/>
                                                     </constraints>
                                                 </imageView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="eQt-hW-RcP">
+                                                    <rect key="frame" x="40" y="40" width="20" height="20"/>
+                                                </activityIndicatorView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="BCh-Yj-0jM" firstAttribute="top" secondItem="uLL-gc-xcv" secondAttribute="top" id="A9H-jn-L3A"/>
+                                                <constraint firstItem="eQt-hW-RcP" firstAttribute="centerX" secondItem="uLL-gc-xcv" secondAttribute="centerX" id="Nn6-BJ-pfK"/>
                                                 <constraint firstItem="BCh-Yj-0jM" firstAttribute="leading" secondItem="uLL-gc-xcv" secondAttribute="leading" id="Txk-ey-g2v"/>
                                                 <constraint firstAttribute="trailing" secondItem="BCh-Yj-0jM" secondAttribute="trailing" id="cOO-NT-QDF"/>
+                                                <constraint firstItem="eQt-hW-RcP" firstAttribute="centerY" secondItem="uLL-gc-xcv" secondAttribute="centerY" id="ffH-W5-r48"/>
                                                 <constraint firstAttribute="bottom" secondItem="BCh-Yj-0jM" secondAttribute="bottom" id="xex-OI-lpo"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
+                                            <outlet property="activityIndicator" destination="eQt-hW-RcP" id="Nlj-m5-Spt"/>
                                             <outlet property="catImageView" destination="BCh-Yj-0jM" id="Xc6-3j-SPk"/>
                                         </connections>
                                     </collectionViewCell>
