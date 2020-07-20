@@ -12,7 +12,7 @@ import UIKit
 
 final class CatImageViewModel {
     private let catImage: CatImage
-    private let repository: CatImageRepository
+    private let repository: CatImageRepositoryProtocol
 
     private var isRequestingSubject = CurrentValueSubject<Bool, Never>(true)
 
@@ -28,7 +28,7 @@ final class CatImageViewModel {
         isRequestingSubject.eraseToAnyPublisher()
     }
 
-    init?(catImage: CatImage, repository: CatImageRepository = CatImageRepository()) {
+    init?(catImage: CatImage, repository: CatImageRepositoryProtocol = CatImageRepository()) {
         guard catImage.isImage else { return nil }
         self.catImage = catImage
         self.repository = repository

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6423A64124C4D72600674DAD /* Publisher+CompactMapMany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6423A64024C4D72600674DAD /* Publisher+CompactMapMany.swift */; };
+		64282CE424C5B6B600448CF4 /* CatsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64282CE324C5B6B600448CF4 /* CatsRepositoryMock.swift */; };
+		64282CE624C5B6FB00448CF4 /* CatImageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64282CE524C5B6FB00448CF4 /* CatImageViewModelTests.swift */; };
+		64282CE824C5B76300448CF4 /* CatImageRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64282CE724C5B76300448CF4 /* CatImageRepositoryMock.swift */; };
 		646C02C424C257B100BD93B7 /* CombineDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 646C02C324C257B100BD93B7 /* CombineDataSources */; };
 		646C02C624C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */; };
 		646C02C824C2592300BD93B7 /* CatImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646C02C724C2592300BD93B7 /* CatImageRepository.swift */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		6423A64024C4D72600674DAD /* Publisher+CompactMapMany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+CompactMapMany.swift"; sourceTree = "<group>"; };
+		64282CE324C5B6B600448CF4 /* CatsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsRepositoryMock.swift; sourceTree = "<group>"; };
+		64282CE524C5B6FB00448CF4 /* CatImageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageViewModelTests.swift; sourceTree = "<group>"; };
+		64282CE724C5B76300448CF4 /* CatImageRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRepositoryMock.swift; sourceTree = "<group>"; };
 		646C02C524C2587E00BD93B7 /* UICollectionView+CombineDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CombineDataSources.swift"; sourceTree = "<group>"; };
 		646C02C724C2592300BD93B7 /* CatImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageRepository.swift; sourceTree = "<group>"; };
 		646C02C924C2595000BD93B7 /* CatImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64282CE224C5B6A000448CF4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				64282CE324C5B6B600448CF4 /* CatsRepositoryMock.swift */,
+				64282CE724C5B76300448CF4 /* CatImageRepositoryMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		646C02CE24C2729600BD93B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +181,9 @@
 		64DFDFC124C2459300E6F371 /* CatzTests */ = {
 			isa = PBXGroup;
 			children = (
+				64282CE224C5B6A000448CF4 /* Mock */,
 				64DFDFC224C2459300E6F371 /* CatsViewModelTests.swift */,
+				64282CE524C5B6FB00448CF4 /* CatImageViewModelTests.swift */,
 				64DFDFC424C2459300E6F371 /* Info.plist */,
 			);
 			path = CatzTests;
@@ -322,7 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64282CE824C5B76300448CF4 /* CatImageRepositoryMock.swift in Sources */,
+				64282CE424C5B6B600448CF4 /* CatsRepositoryMock.swift in Sources */,
 				64DFDFC324C2459300E6F371 /* CatsViewModelTests.swift in Sources */,
+				64282CE624C5B6FB00448CF4 /* CatImageViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
